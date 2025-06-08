@@ -11,7 +11,8 @@ const Home = () => {
     const [todos, setTodos] = useState<ToDo[]>([]);
     const [error, setError] = useState<string>("");
 
-    const handleClick = (): void => {
+    const handleClick = (e: React.FormEvent): void => {
+        e.preventDefault();
         setError("");
         if (toAdd.trim() === "") {
             setError("Input cannot be empty.");
@@ -28,7 +29,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="flex gap-3 justify-center items-start p-5 mt-20">
+            <form className="flex gap-3 justify-center items-start p-5 mt-20">
                 <div className="flex flex-col gap-1 relative">
                     <input
                         type="text"
@@ -45,12 +46,13 @@ const Home = () => {
                 </div>
 
                 <button
+                    type="submit"
                     onClick={handleClick}
                     className="bg-amber-900 p-3 text-white rounded-md active:bg-amber-950 cursor-pointer"
                 >
                     Add
                 </button>
-            </div>
+            </form>
 
             <div className="flex flex-col w-full gap-2 justify-center items-center p-5">
                 {todos.map(({ id, todo }, index) => (
