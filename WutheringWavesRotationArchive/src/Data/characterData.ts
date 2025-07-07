@@ -1,11 +1,9 @@
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
-
-const resonatorImgPathMaker = (name: string): string =>
-    `src/Assets/Resonators/Resonator_${name}.webp`;
-const elementImgPathMaker = (name: Elements): string =>
-    `src/Assets/Elements/${name}.webp`;
-const weaponImgPathMaker = (name: Weapons): string =>
-    `src/Assets/Weapons/${name}_Icon.webp`;
+import {
+    resonatorImgPathMaker,
+    elementImgPathMaker,
+    weaponImgPathMaker,
+} from "../Helpers/imgPathMakers";
 
 export interface CharacterData {
     name: string;
