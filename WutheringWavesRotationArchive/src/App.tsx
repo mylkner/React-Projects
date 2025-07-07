@@ -1,5 +1,12 @@
+import { Route, Routes } from "react-router";
+import Header from "./components/Header";
+
 function App() {
-    return <p className="text-red-500">hello</p>;
+    return (
+        <Routes>
+            <Route index element={<Header />} />
+        </Routes>
+    );
 }
 
 export default App;
