@@ -19,7 +19,8 @@ const InfoCard = ({ setShowInfoCard }: props) => {
                     These rotations are just what I personally use in Wuthering
                     Waves. They may or may not be the most optimal, but just
                     what I found that I thinks works well and fits my playstyle.
-                    Feel free to adjust them in any way you please.
+                    Only characters I own/have built will be here. Feel free to
+                    adjust them in any way you please.
                 </p>
                 <button
                     className="px-6 py-3 bg-blue-500 text-white rounded mt-auto hover:bg-blue-600 hover:cursor-pointer"
