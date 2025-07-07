@@ -1,22 +1,37 @@
 import { useState } from "react";
 import { CiCircleInfo } from "react-icons/ci";
 import InfoCard from "./InfoCard";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Header = () => {
     const [showInfoCard, setShowInfoCard] = useState<boolean>(false);
 
     return (
-        <div className="h-[5vh] bg-amber-400 p-3 flex items-center">
-            <CiCircleInfo
-                className="text-3xl hover:cursor-pointer hover:text-white"
-                onClick={() => setShowInfoCard(true)}
-            />
-            <Link to="/" className="text-2xl ml-10">
-                Character List
-            </Link>
+        <header className="h-[5vh] w-full bg-gray-800 px-4 flex items-center justify-between">
+            <h1 className="text-xl font-bold text-white">
+                WuWa Rotation Archive
+            </h1>
+
+            <div className="flex items-center gap-6">
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        isActive
+                            ? "text-white text-xl"
+                            : "text-neutral-400 text-xl transition-colors duration-150 ease-in hover:text-white"
+                    }
+                >
+                    Characters
+                </NavLink>
+
+                <CiCircleInfo
+                    className="text-neutral-400 text-3xl font-bold transition-colors duration-150 ease-in hover:text-white hover:cursor-pointer"
+                    onClick={() => setShowInfoCard(true)}
+                />
+            </div>
+
             {showInfoCard && <InfoCard setShowInfoCard={setShowInfoCard} />}
-        </div>
+        </header>
     );
 };
 
