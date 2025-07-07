@@ -1,11 +1,11 @@
 export interface CharacterData {
-    character: string;
+    name: string;
     data: { team: string; rotation: string }[];
 }
 
-const rotations: CharacterData[] = [
+const db: CharacterData[] = [
     {
-        character: "rover-havoc",
+        name: "rover-havoc",
         data: [
             {
                 team: "",
@@ -14,7 +14,7 @@ const rotations: CharacterData[] = [
         ],
     },
     {
-        character: "encore",
+        name: "encore",
         data: [
             {
                 team: "",
@@ -23,7 +23,7 @@ const rotations: CharacterData[] = [
         ],
     },
     {
-        character: "camellya",
+        name: "camellya",
         data: [
             {
                 team: "",
@@ -32,7 +32,7 @@ const rotations: CharacterData[] = [
         ],
     },
     {
-        character: "jiyan",
+        name: "jiyan",
         data: [
             {
                 team: "",
@@ -41,7 +41,7 @@ const rotations: CharacterData[] = [
         ],
     },
     {
-        character: "carlotta",
+        name: "carlotta",
         data: [
             {
                 team: "",
@@ -50,7 +50,7 @@ const rotations: CharacterData[] = [
         ],
     },
     {
-        character: "changli",
+        name: "changli",
         data: [
             {
                 team: "",
@@ -60,4 +60,4 @@ const rotations: CharacterData[] = [
     },
 ];
 
-export default rotations;
+export default db;
