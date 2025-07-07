@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import db, { type CharacterData } from "../Data/db";
+import db, { type CharacterData } from "../Data/rotationData";
 import NotFound from "./NotFound";
 
 const RotationPage = () => {
