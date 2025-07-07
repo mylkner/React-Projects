@@ -9,32 +9,32 @@ export interface PortraitData {
 
 const portraitDb: PortraitData[] = [
     {
-        name: "rover-havoc",
+        name: "Rover-Havoc",
         rarity: "5 Star",
         icon: imgPathMaker("Female_Rover"),
     },
     {
-        name: "encore",
+        name: "Encore",
         rarity: "5 Star",
         icon: imgPathMaker("Encore"),
     },
     {
-        name: "camellya",
+        name: "Camellya",
         rarity: "5 Star",
         icon: imgPathMaker("Camellya"),
     },
     {
-        name: "jiyan",
+        name: "Jiyan",
         rarity: "5 Star",
         icon: imgPathMaker("Jiyan"),
     },
     {
-        name: "carlotta",
+        name: "Carlotta",
         rarity: "5 Star",
         icon: imgPathMaker("Carlotta"),
     },
     {
-        name: "changli",
+        name: "Changli",
         rarity: "5 Star",
         icon: imgPathMaker("Changli"),
     },
