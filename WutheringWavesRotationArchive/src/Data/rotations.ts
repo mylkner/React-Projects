@@ -1,49 +1,63 @@
-interface Rotations {
-    [character: string]: Rotation[];
+export interface CharacterData {
+    character: string;
+    data: { team: string; rotation: string }[];
 }
 
-export interface Rotation {
-    team: string;
-    rotation: string;
-}
-
-const rotations: Rotations = {
-    "rover-havoc": [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-    encore: [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-    camellya: [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-    jiyan: [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-    carlotta: [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-    changli: [
-        {
-            team: "",
-            rotation: "",
-        },
-    ],
-};
+const rotations: CharacterData[] = [
+    {
+        character: "rover-havoc",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+    {
+        character: "encore",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+    {
+        character: "camellya",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+    {
+        character: "jiyan",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+    {
+        character: "carlotta",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+    {
+        character: "changli",
+        data: [
+            {
+                team: "",
+                rotation: "",
+            },
+        ],
+    },
+];
 
 export default rotations;
