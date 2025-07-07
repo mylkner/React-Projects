@@ -3,7 +3,7 @@ export interface CharacterData {
     data: { team: string; rotation: string }[];
 }
 
-const db: CharacterData[] = [
+const rotationDb: CharacterData[] = [
     {
         name: "rover-havoc",
         data: [
@@ -60,4 +60,4 @@ const db: CharacterData[] = [
     },
 ];
 
-export default db;
+export default rotationDb;

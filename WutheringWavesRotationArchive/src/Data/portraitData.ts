@@ -7,7 +7,7 @@ export interface PortraitData {
     icon: string;
 }
 
-const db: PortraitData[] = [
+const portraitDb: PortraitData[] = [
     {
         name: "rover-havoc",
         rarity: "5 Star",
@@ -40,4 +40,4 @@ const db: PortraitData[] = [
     },
 ];
 
-export default db;
+export default portraitDb;
