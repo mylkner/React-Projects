@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import db, { type CharacterData } from "../Data/rotationData";
+import db, { type RotationData } from "../Data/rotationData";
 import NotFound from "./NotFound";
 
 const RotationPage = () => {
@@ -9,7 +9,7 @@ const RotationPage = () => {
         return <p>No character specified.</p>;
     }
 
-    const data: CharacterData | undefined = db.find(
+    const data: RotationData | undefined = db.find(
         ({ name }) => name === character
     );
 
@@ -17,7 +17,7 @@ const RotationPage = () => {
         return <NotFound />;
     }
 
-    return <div>{data.name}</div>;
+    return <div className="text-white">{data.name}</div>;
 };
 
 export default RotationPage;
