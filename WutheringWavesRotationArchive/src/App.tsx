@@ -9,6 +9,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<CharacterList />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );
