@@ -8,37 +8,37 @@ export interface Rotation {
 }
 
 const rotations: Rotations = {
-    "Rover-Havoc": [
+    "rover-havoc": [
         {
             team: "",
             rotation: "",
         },
     ],
-    Encore: [
+    encore: [
         {
             team: "",
             rotation: "",
         },
     ],
-    Camellya: [
+    camellya: [
         {
             team: "",
             rotation: "",
         },
     ],
-    Jiyan: [
+    jiyan: [
         {
             team: "",
             rotation: "",
         },
     ],
-    Carlotta: [
+    carlotta: [
         {
             team: "",
             rotation: "",
         },
     ],
-    Changli: [
+    changli: [
         {
             team: "",
             rotation: "",
