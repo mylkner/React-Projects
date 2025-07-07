@@ -1,10 +1,10 @@
 import type { Dispatch, SetStateAction } from "react";
 
-interface props {
+interface InfoCardProps {
     setShowInfoCard: Dispatch<SetStateAction<boolean>>;
 }
 
-const InfoCard = ({ setShowInfoCard }: props) => {
+const InfoCard = ({ setShowInfoCard }: InfoCardProps) => {
     return (
         <div
             className="absolute top-0 right-0 left-0 bottom-0 w-full h-full flex items-center justify-center opacity-80 bg-black ="
