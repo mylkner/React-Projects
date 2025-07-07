@@ -8,7 +8,7 @@ interface InfoCardProps {
 const InfoCard = ({ setShowInfoCard }: InfoCardProps) => {
     return (
         <div
-            className="absolute top-0 right-0 left-0 bottom-0 w-full h-full flex items-center justify-center bg-black/80 ="
+            className="absolute top-0 right-0 left-0 bottom-0 w-full h-full flex items-center justify-center bg-black/80 z-50"
             onClick={() => setShowInfoCard(false)}
         >
             <div
