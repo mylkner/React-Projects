@@ -1,9 +1,9 @@
-export interface CharacterData {
+export interface RotationData {
     name: string;
     data: { team: string; rotation: string }[];
 }
 
-const rotationDb: CharacterData[] = [
+const rotationDb: RotationData[] = [
     {
         name: "rover-havoc",
         data: [
