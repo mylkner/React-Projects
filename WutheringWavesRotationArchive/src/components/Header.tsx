@@ -5,6 +5,7 @@ import { Link } from "react-router";
 
 const Header = () => {
     const [showInfoCard, setShowInfoCard] = useState<boolean>(false);
+
     return (
         <div className="h-[5vh] bg-amber-400 p-3 flex items-center">
             <CiCircleInfo
