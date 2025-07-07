@@ -1,9 +1,9 @@
 import { useParams } from "react-router";
-import db, { type CharacterData } from "../Data/rotations";
+import db, { type CharacterData } from "../Data/db";
 import NotFound from "./NotFound";
 
 const RotationPage = () => {
-    const { character } = useParams<string>();
+    const { character } = useParams();
 
     if (!character) {
         return <p>No character specified.</p>;
