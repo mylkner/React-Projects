@@ -9,15 +9,20 @@ const RotationPage = () => {
         return <p>No character specified.</p>;
     }
 
-    const data: RotationData | undefined = db.find(
-        ({ name }) => name === character
+    const charData: RotationData | undefined = db.find(
+        ({ name }) => name.toLowerCase() === character
     );
 
-    if (!data) {
+    if (!charData) {
         return <NotFound />;
     }
 
-    return <div className="text-white">{data.name}</div>;
+    return (
+        <div className="flex flex-col flex-wrap gap-3 p-10">
+            <h1 className="text-white text-4xl">{charData.name}</h1>
+            <hr className="text-white" />
+        </div>
+    );
 };
 
 export default RotationPage;

@@ -5,7 +5,7 @@ export interface RotationData {
 
 const rotationDb: RotationData[] = [
     {
-        name: "rover-havoc",
+        name: "Rover-Havoc",
         data: [
             {
                 team: "",
@@ -14,7 +14,7 @@ const rotationDb: RotationData[] = [
         ],
     },
     {
-        name: "encore",
+        name: "Encore",
         data: [
             {
                 team: "",
@@ -23,7 +23,7 @@ const rotationDb: RotationData[] = [
         ],
     },
     {
-        name: "camellya",
+        name: "Camellya",
         data: [
             {
                 team: "",
@@ -32,7 +32,7 @@ const rotationDb: RotationData[] = [
         ],
     },
     {
-        name: "jiyan",
+        name: "Jiyan",
         data: [
             {
                 team: "",
@@ -41,7 +41,7 @@ const rotationDb: RotationData[] = [
         ],
     },
     {
-        name: "carlotta",
+        name: "Carlotta",
         data: [
             {
                 team: "",
@@ -50,7 +50,7 @@ const rotationDb: RotationData[] = [
         ],
     },
     {
-        name: "changli",
+        name: "Changli",
         data: [
             {
                 team: "",
