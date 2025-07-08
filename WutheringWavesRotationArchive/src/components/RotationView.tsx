@@ -1,4 +1,5 @@
-import characterDb, { type CharacterData } from "../Data/characterData";
+import characterDb from "../Data/characterData";
+import Character from "../models/CharacterClass";
 import CharacterPortrait from "./CharacterPortrait";
 
 interface RotationViewProps {
@@ -8,12 +9,12 @@ interface RotationViewProps {
 }
 
 const RotationView = ({ team, rotation, index }: RotationViewProps) => {
-    const characterMap: Map<string, CharacterData> = new Map(
+    const characterMap: Map<string, Character> = new Map(
         characterDb.map((char) => [char.name, char])
     );
-    const characterPortraits: CharacterData[] = team
+    const characterPortraits: Character[] = team
         .map((charName) => characterMap.get(charName))
-        .filter((char): char is CharacterData => char !== undefined);
+        .filter((char): char is Character => char !== undefined);
 
     return (
         <div className="flex flex-col gap-3 mb-20">

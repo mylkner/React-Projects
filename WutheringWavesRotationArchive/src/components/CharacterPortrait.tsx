@@ -1,7 +1,7 @@
-import type { CharacterData } from "../Data/characterData";
+import type Character from "../models/CharacterClass";
 
 interface CharacterPortraitProps {
-    portraitData: CharacterData;
+    portraitData: Character;
 }
 
 const CharacterPortrait = ({ portraitData }: CharacterPortraitProps) => {

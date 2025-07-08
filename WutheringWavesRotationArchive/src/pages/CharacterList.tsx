@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import CharacterPortrait from "../components/CharacterPortrait";
-import {
-    charactersWithRotationsDb,
-    type CharacterData,
-} from "../Data/characterData";
+import characterDb from "../Data/characterData";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
     elementImgPathMaker,
@@ -12,10 +9,14 @@ import {
 } from "../Helpers/imgPathMakers";
 import FilterGroup from "../components/FilterGroup";
 import { Link } from "react-router";
+import type Character from "../models/CharacterClass";
 
 const CharacterList = () => {
-    const [characters, setCharacters] = useState<CharacterData[]>(
-        charactersWithRotationsDb
+    const charactersWithRotations = characterDb.filter(
+        (char) => char.hasRotations
+    );
+    const [characters, setCharacters] = useState<Character[]>(
+        charactersWithRotations
     );
     const [search, setSearch] = useState<string>("");
     const [selectedRarities, setSelectedRarities] = useState<Rarities[]>([]);
@@ -23,7 +24,7 @@ const CharacterList = () => {
     const [selectedWeapons, setSelectedWeapons] = useState<Weapons[]>([]);
 
     useEffect(() => {
-        const filtered = charactersWithRotationsDb.filter((character) => {
+        const filtered = charactersWithRotations.filter((character) => {
             const matchesSearch = character.name
                 .toLowerCase()
                 .includes(search.toLowerCase());
@@ -49,7 +50,13 @@ const CharacterList = () => {
         });
 
         setCharacters(filtered);
-    }, [search, selectedRarities, selectedElements, selectedWeapons]);
+    }, [
+        search,
+        selectedRarities,
+        selectedElements,
+        selectedWeapons,
+        charactersWithRotations,
+    ]);
 
     const searchBar = (
         <div className="flex items-center border w-fit py-2 px-4 gap-3 border-white rounded">
