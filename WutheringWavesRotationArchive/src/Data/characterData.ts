@@ -11,6 +11,7 @@ export interface CharacterData {
     element: Elements;
     weapon: Weapons;
     icons: { character: string; element: string; weapon: string };
+    hasRotations: boolean;
 }
 
 const characterDb: CharacterData[] = [
@@ -24,6 +25,7 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Havoc),
             weapon: weaponImgPathMaker(Weapons.Sword),
         },
+        hasRotations: true,
     },
     {
         name: "Encore",
@@ -35,6 +37,7 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Fusion),
             weapon: weaponImgPathMaker(Weapons.Rectifier),
         },
+        hasRotations: true,
     },
     {
         name: "Camellya",
@@ -46,6 +49,7 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Havoc),
             weapon: weaponImgPathMaker(Weapons.Sword),
         },
+        hasRotations: true,
     },
     {
         name: "Jiyan",
@@ -57,6 +61,7 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Aero),
             weapon: weaponImgPathMaker(Weapons.Broadblade),
         },
+        hasRotations: true,
     },
     {
         name: "Carlotta",
@@ -68,6 +73,7 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Glacio),
             weapon: weaponImgPathMaker(Weapons.Pistols),
         },
+        hasRotations: true,
     },
     {
         name: "Changli",
@@ -79,7 +85,11 @@ const characterDb: CharacterData[] = [
             element: elementImgPathMaker(Elements.Fusion),
             weapon: weaponImgPathMaker(Weapons.Sword),
         },
+        hasRotations: true,
     },
 ];
 
+export const charactersWithRotationsDb = characterDb.filter(
+    (char) => char.hasRotations
+);
 export default characterDb;
