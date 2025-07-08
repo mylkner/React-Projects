@@ -8,8 +8,12 @@ const rotationDb: RotationData[] = [
         name: "Rover-Havoc",
         data: [
             {
-                team: [""],
-                rotation: "",
+                team: ["Rover-Havoc", "Danjin", "Shorekeeper"],
+                rotation: "a-d-w-2",
+            },
+            {
+                team: ["Rover-Havoc", "Danjin", "Verina"],
+                rotation: "a-d-w-2",
             },
         ],
     },
