@@ -87,6 +87,42 @@ const characterDb: CharacterData[] = [
         },
         hasRotations: true,
     },
+    {
+        name: "Danjin",
+        rarity: Rarities["4\u2605"],
+        element: Elements.Havoc,
+        weapon: Weapons.Sword,
+        icons: {
+            character: resonatorImgPathMaker("Danjin"),
+            element: elementImgPathMaker(Elements.Havoc),
+            weapon: weaponImgPathMaker(Weapons.Sword),
+        },
+        hasRotations: false,
+    },
+    {
+        name: "Shorekeeper",
+        rarity: Rarities["5\u2605"],
+        element: Elements.Spectro,
+        weapon: Weapons.Rectifier,
+        icons: {
+            character: resonatorImgPathMaker("Shorekeeper"),
+            element: elementImgPathMaker(Elements.Spectro),
+            weapon: weaponImgPathMaker(Weapons.Rectifier),
+        },
+        hasRotations: false,
+    },
+    {
+        name: "Verina",
+        rarity: Rarities["5\u2605"],
+        element: Elements.Spectro,
+        weapon: Weapons.Rectifier,
+        icons: {
+            character: resonatorImgPathMaker("Verina"),
+            element: elementImgPathMaker(Elements.Spectro),
+            weapon: weaponImgPathMaker(Weapons.Rectifier),
+        },
+        hasRotations: false,
+    },
 ];
 
 export const charactersWithRotationsDb = characterDb.filter(
