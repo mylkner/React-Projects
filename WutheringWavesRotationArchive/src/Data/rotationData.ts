@@ -86,6 +86,15 @@ const rotationDb: RotationData[] = [
             },
         ],
     },
+    {
+        name: "Lupa",
+        data: [
+            {
+                team: [""],
+                rotation: "",
+            },
+        ],
+    },
 ];
 
 export default rotationDb;

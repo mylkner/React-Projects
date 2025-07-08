@@ -21,6 +21,10 @@ const characterDb: Character[] = [
         Elements.Spectro,
         Weapons.Rectifier
     ),
+    new Character("Sanhua", Rarities["4★"], Elements.Glacio, Weapons.Sword),
+    new Character("Mortefi", Rarities["4★"], Elements.Fusion, Weapons.Pistols),
+    new Character("Zhezhi", Rarities["4★"], Elements.Glacio, Weapons.Rectifier),
+    new Character("Lupa", Rarities["5★"], Elements.Fusion, Weapons.Broadblade),
 ];
 
 export default characterDb;
