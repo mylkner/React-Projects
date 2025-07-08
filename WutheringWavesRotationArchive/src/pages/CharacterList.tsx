@@ -8,6 +8,7 @@ import {
     weaponImgPathMaker,
 } from "../Helpers/imgPathMakers";
 import FilterGroup from "../components/FilterGroup";
+import { Link } from "react-router";
 
 const CharacterList = () => {
     const [characters, setCharacters] = useState<CharacterData[]>(characterDb);
@@ -87,10 +88,15 @@ const CharacterList = () => {
                 {characters
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((data) => (
-                        <CharacterPortrait
-                            key={data.name}
-                            portraitData={data}
-                        />
+                        <Link
+                            to={data.name.toLowerCase()}
+                            className="hover:cursor-pointer"
+                        >
+                            <CharacterPortrait
+                                key={data.name}
+                                portraitData={data}
+                            />
+                        </Link>
                     ))}
             </div>
         </div>

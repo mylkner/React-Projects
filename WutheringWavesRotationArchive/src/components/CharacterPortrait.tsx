@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import type { CharacterData } from "../Data/characterData";
 
 interface CharacterPortraitProps {
@@ -11,10 +10,7 @@ const CharacterPortrait = ({ portraitData }: CharacterPortraitProps) => {
         rarity === "5\u2605" ? "bg-yellow-600" : "bg-violet-500";
 
     return (
-        <Link
-            to={`/${name.toLowerCase()}`}
-            className={`flex flex-col ${bgColor} rounded-lg hover:cursor-pointer relative`}
-        >
+        <div className={`flex flex-col ${bgColor} rounded-lg relative`}>
             <img
                 src={icons.element}
                 className="absolute top-0 left-0 h-[40px] w-[40px]"
@@ -31,7 +27,7 @@ const CharacterPortrait = ({ portraitData }: CharacterPortraitProps) => {
             <p className="bg-neutral-300 text-center p-2 rounded-b-lg font-semibold">
                 {name}
             </p>
-        </Link>
+        </div>
     );
 };
 
