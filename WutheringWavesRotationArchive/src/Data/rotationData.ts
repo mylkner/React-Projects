@@ -60,11 +60,11 @@ const rotationDb: RotationData[] = [
         name: "Carlotta",
         data: [
             {
-                team: ["Carlotta", "ZheZhi", "Shorekeeper"],
+                team: ["Carlotta", "Zhezhi", "Shorekeeper"],
                 rotation: "awdawd",
             },
             {
-                team: ["Carlotta", "ZheZhi", "Verina"],
+                team: ["Carlotta", "Zhezhi", "Verina"],
                 rotation: "awdawd",
             },
             {
