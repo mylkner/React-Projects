@@ -1,6 +1,6 @@
 export interface RotationData {
     name: string;
-    data: { team: string; rotation: string }[];
+    data: { team: string[]; rotation: string }[];
 }
 
 const rotationDb: RotationData[] = [
@@ -8,7 +8,7 @@ const rotationDb: RotationData[] = [
         name: "Rover-Havoc",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
@@ -17,7 +17,7 @@ const rotationDb: RotationData[] = [
         name: "Encore",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
@@ -26,7 +26,7 @@ const rotationDb: RotationData[] = [
         name: "Camellya",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
@@ -35,7 +35,7 @@ const rotationDb: RotationData[] = [
         name: "Jiyan",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
@@ -44,7 +44,7 @@ const rotationDb: RotationData[] = [
         name: "Carlotta",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
@@ -53,7 +53,7 @@ const rotationDb: RotationData[] = [
         name: "Changli",
         data: [
             {
-                team: "",
+                team: [""],
                 rotation: "",
             },
         ],
