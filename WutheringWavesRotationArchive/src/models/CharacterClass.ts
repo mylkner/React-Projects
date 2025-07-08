@@ -12,7 +12,7 @@ class Character {
     element: Elements;
     weapon: Weapons;
     icons: { character: string; element: string; weapon: string };
-    hasRotations: () => boolean;
+    hasRotations: boolean;
 
     constructor(
         name: string,
@@ -31,8 +31,8 @@ class Character {
             element: elementImgPathMaker(this.element),
             weapon: weaponImgPathMaker(this.weapon),
         };
-        this.hasRotations = () =>
-            rotationDb.findIndex((char) => char.name === name) != -1;
+        this.hasRotations =
+            rotationDb.findIndex((char) => char.name === this.name) != -1;
     }
 }
 
