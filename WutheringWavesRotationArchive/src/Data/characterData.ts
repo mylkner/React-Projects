@@ -8,7 +8,7 @@ const characterDb: Character[] = [
     new Character("Jiyan", Rarities["5★"], Elements.Aero, Weapons.Broadblade),
     new Character("Carlotta", Rarities["5★"], Elements.Glacio, Weapons.Pistols),
     new Character("Changli", Rarities["5★"], Elements.Fusion, Weapons.Sword),
-    new Character("Danjin", Rarities["5★"], Elements.Havoc, Weapons.Sword),
+    new Character("Danjin", Rarities["4★"], Elements.Havoc, Weapons.Sword),
     new Character(
         "Shorekeeper",
         Rarities["5★"],
