@@ -25,7 +25,9 @@ class Character {
         this.element = element;
         this.weapon = weapon;
         this.icons = {
-            character: resonatorImgPathMaker(this.name),
+            character: resonatorImgPathMaker(
+                this.name === "Rover-Havoc" ? "Female_rover" : this.name
+            ),
             element: elementImgPathMaker(this.element),
             weapon: weaponImgPathMaker(this.weapon),
         };
