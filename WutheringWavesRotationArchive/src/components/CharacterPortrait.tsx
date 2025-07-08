@@ -8,7 +8,7 @@ interface CharacterSelectIconProps {
 const CharacterSelectIcon = ({ portraitData }: CharacterSelectIconProps) => {
     const { name, rarity, icons } = portraitData;
     const bgColor: string =
-        rarity === "5 Star" ? "bg-yellow-600" : "bg-violet-500";
+        rarity === "5\u2605" ? "bg-yellow-600" : "bg-violet-500";
 
     return (
         <Link

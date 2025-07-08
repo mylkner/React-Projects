@@ -1,6 +1,6 @@
 export const Rarities = {
-    "5 Star": "5 Star",
-    "4 Star": "4 Star",
+    "5\u2605": "5\u2605",
+    "4\u2605": "4\u2605",
 } as const;
 
 export const Elements = {

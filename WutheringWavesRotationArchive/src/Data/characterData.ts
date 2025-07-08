@@ -16,7 +16,7 @@ export interface CharacterData {
 const characterDb: CharacterData[] = [
     {
         name: "Rover-Havoc",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Havoc,
         weapon: Weapons.Sword,
         icons: {
@@ -27,7 +27,7 @@ const characterDb: CharacterData[] = [
     },
     {
         name: "Encore",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Fusion,
         weapon: Weapons.Rectifier,
         icons: {
@@ -38,7 +38,7 @@ const characterDb: CharacterData[] = [
     },
     {
         name: "Camellya",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Havoc,
         weapon: Weapons.Sword,
         icons: {
@@ -49,7 +49,7 @@ const characterDb: CharacterData[] = [
     },
     {
         name: "Jiyan",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Aero,
         weapon: Weapons.Broadblade,
         icons: {
@@ -60,7 +60,7 @@ const characterDb: CharacterData[] = [
     },
     {
         name: "Carlotta",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Glacio,
         weapon: Weapons.Pistols,
         icons: {
@@ -71,7 +71,7 @@ const characterDb: CharacterData[] = [
     },
     {
         name: "Changli",
-        rarity: Rarities["5 Star"],
+        rarity: Rarities["5\u2605"],
         element: Elements.Fusion,
         weapon: Weapons.Sword,
         icons: {
