@@ -21,8 +21,12 @@ const rotationDb: RotationData[] = [
         name: "Encore",
         data: [
             {
-                team: [""],
-                rotation: "",
+                team: ["Encore", "Sanhua", "Shorekeeper"],
+                rotation: "a-w-d-a",
+            },
+            {
+                team: ["Encore", "Sanhua", "Verina"],
+                rotation: "a-w-d-a",
             },
         ],
     },
@@ -30,8 +34,12 @@ const rotationDb: RotationData[] = [
         name: "Camellya",
         data: [
             {
-                team: [""],
-                rotation: "",
+                team: ["Camellya", "Sanhua", "Shorekeeper"],
+                rotation: "a-w-d-a",
+            },
+            {
+                team: ["Camellya", "Sanhua", "Verina"],
+                rotation: "a-w-d-a",
             },
         ],
     },
@@ -39,8 +47,12 @@ const rotationDb: RotationData[] = [
         name: "Jiyan",
         data: [
             {
-                team: [""],
-                rotation: "",
+                team: ["Jiyan", "Mortefi", "Shorekeeper"],
+                rotation: "awdawd",
+            },
+            {
+                team: ["Jiyan", "Mortefi", "Verina"],
+                rotation: "awdawd",
             },
         ],
     },
@@ -48,8 +60,20 @@ const rotationDb: RotationData[] = [
         name: "Carlotta",
         data: [
             {
-                team: [""],
-                rotation: "",
+                team: ["Carlotta", "ZheZhi", "Shorekeeper"],
+                rotation: "awdawd",
+            },
+            {
+                team: ["Carlotta", "ZheZhi", "Verina"],
+                rotation: "awdawd",
+            },
+            {
+                team: ["Carlotta", "Changli", "Shorekeeper"],
+                rotation: "awdawd",
+            },
+            {
+                team: ["Carlotta", "Changli", "Verina"],
+                rotation: "awdawd",
             },
         ],
     },
