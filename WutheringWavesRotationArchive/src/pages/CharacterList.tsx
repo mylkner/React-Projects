@@ -61,7 +61,7 @@ const CharacterList = () => {
         <div className="flex flex-col flex-wrap gap-3 p-10">
             <h1 className="text-white text-4xl">Characters</h1>
             <hr className="text-white" />
-            <div className="flex flex-col lg:flex-row gap-5">
+            <div className="flex flex-col xl:flex-row gap-5">
                 {searchBar}
                 <FilterGroup
                     values={Object.values(Rarities)}
