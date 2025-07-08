@@ -23,8 +23,8 @@ const RotationPage = () => {
             <h1 className="text-white text-4xl">{charData.name}</h1>
             <hr className="text-white" />
             <div className="flex flex-col">
-                {charData.data.map(({ team, rotation }) => (
-                    <RotationView team={team} rotation={rotation} />
+                {charData.data.map(({ team, rotation }, i) => (
+                    <RotationView team={team} rotation={rotation} index={i} />
                 ))}
             </div>
         </div>
