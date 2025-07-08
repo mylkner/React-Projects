@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-import CharacterSelectIcon from "../components/CharacterPortrait";
+import CharacterPortrait from "../components/CharacterPortrait";
 import characterDb, { type CharacterData } from "../Data/characterData";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
@@ -87,7 +87,7 @@ const CharacterList = () => {
                 {characters
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((data) => (
-                        <CharacterSelectIcon
+                        <CharacterPortrait
                             key={data.name}
                             portraitData={data}
                         />

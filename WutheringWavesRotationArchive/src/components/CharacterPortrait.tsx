@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 import type { CharacterData } from "../Data/characterData";
 
-interface CharacterSelectIconProps {
+interface CharacterPortraitProps {
     portraitData: CharacterData;
 }
 
-const CharacterSelectIcon = ({ portraitData }: CharacterSelectIconProps) => {
+const CharacterPortrait = ({ portraitData }: CharacterPortraitProps) => {
     const { name, rarity, icons } = portraitData;
     const bgColor: string =
         rarity === "5\u2605" ? "bg-yellow-600" : "bg-violet-500";
@@ -35,4 +35,4 @@ const CharacterSelectIcon = ({ portraitData }: CharacterSelectIconProps) => {
     );
 };
 
-export default CharacterSelectIcon;
+export default CharacterPortrait;
