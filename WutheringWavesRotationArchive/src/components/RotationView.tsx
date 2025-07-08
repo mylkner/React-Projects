@@ -17,7 +17,7 @@ const RotationView = ({ team, rotation, index }: RotationViewProps) => {
         .filter((char): char is Character => char !== undefined);
 
     return (
-        <div className="flex flex-col gap-3 mb-20">
+        <div className="flex flex-col gap-3 mb-12">
             <h1 className="text-white text-2xl">{index + 1}</h1>
             <hr className="text-white" />
             <div className="flex flex-row gap-3">
