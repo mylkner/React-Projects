@@ -90,12 +90,10 @@ const CharacterList = () => {
                     .map((data) => (
                         <Link
                             to={data.name.toLowerCase()}
+                            key={data.name}
                             className="hover:cursor-pointer"
                         >
-                            <CharacterPortrait
-                                key={data.name}
-                                portraitData={data}
-                            />
+                            <CharacterPortrait portraitData={data} />
                         </Link>
                     ))}
             </div>
