@@ -4,7 +4,7 @@ interface FilterGroupProps<T> {
     values: T[];
     selected: T[];
     setSelected: Dispatch<SetStateAction<T[]>>;
-    imgPathMaker: (value: T) => string;
+    imgPathMaker?: (value: T) => string;
 }
 
 const FilterGroup = <T,>({
@@ -31,10 +31,16 @@ const FilterGroup = <T,>({
                     } border border-white rounded p-1 cursor-pointer`}
                     onClick={() => handleClick(item)}
                 >
-                    <img
-                        src={imgPathMaker(item)}
-                        className="h-[50px] w-[50px]"
-                    />
+                    {imgPathMaker ? (
+                        <img
+                            src={imgPathMaker(item)}
+                            className="h-[50px] w-[50px]"
+                        />
+                    ) : (
+                        <p className="text-white text-2xl flex justify-center items-center h-[50px] w-[50px]">
+                            {String(item)}
+                        </p>
+                    )}
                 </div>
             ))}
         </div>

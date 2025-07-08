@@ -5,7 +5,6 @@ import characterDb from "../Data/characterData";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
     elementImgPathMaker,
-    rarityImgPathMaker,
     weaponImgPathMaker,
 } from "../Helpers/imgPathMakers";
 import FilterGroup from "../components/FilterGroup";
@@ -38,7 +37,7 @@ const CharacterList = () => {
                     values={Object.values(Rarities)}
                     selected={selectedRarities}
                     setSelected={setSelectedRarities}
-                    imgPathMaker={rarityImgPathMaker}
+                    imgPathMaker={undefined}
                 />
                 <FilterGroup
                     values={Object.values(Elements)}
