@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import CharacterSelectIcon from "../components/CharacterPortrait";
-import characterDb from "../Data/characterData";
+import characterDb, { type CharacterData } from "../Data/characterData";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
     elementImgPathMaker,
@@ -10,10 +10,40 @@ import {
 import FilterGroup from "../components/FilterGroup";
 
 const CharacterList = () => {
+    const [characters, setCharacters] = useState<CharacterData[]>(characterDb);
     const [search, setSearch] = useState<string>("");
     const [selectedRarities, setSelectedRarities] = useState<Rarities[]>([]);
     const [selectedElements, setSelectedElements] = useState<Elements[]>([]);
     const [selectedWeapons, setSelectedWeapons] = useState<Weapons[]>([]);
+
+    useEffect(() => {
+        const filtered = characterDb.filter((character) => {
+            const matchesSearch = character.name
+                .toLowerCase()
+                .includes(search.toLowerCase());
+
+            const matchesRarity =
+                selectedRarities.length === 0 ||
+                selectedRarities.includes(character.rarity);
+
+            const matchesElement =
+                selectedElements.length === 0 ||
+                selectedElements.includes(character.element);
+
+            const matchesWeapon =
+                selectedWeapons.length === 0 ||
+                selectedWeapons.includes(character.weapon);
+
+            return (
+                matchesSearch &&
+                matchesRarity &&
+                matchesElement &&
+                matchesWeapon
+            );
+        });
+
+        setCharacters(filtered);
+    }, [search, selectedRarities, selectedElements, selectedWeapons]);
 
     const searchBar = (
         <div className="flex items-center border w-fit py-2 px-4 gap-3 border-white rounded">
@@ -54,7 +84,7 @@ const CharacterList = () => {
             </div>
 
             <div className="flex flex-wrap gap-3">
-                {characterDb
+                {characters
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((data) => (
                         <CharacterSelectIcon
