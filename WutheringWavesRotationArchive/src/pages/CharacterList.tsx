@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { IoSearch } from "react-icons/io5";
 import CharacterPortrait from "../components/CharacterPortrait";
 import characterDb from "../Data/characterData";
@@ -12,8 +12,9 @@ import { Link } from "react-router";
 import type Character from "../models/CharacterClass";
 
 const CharacterList = () => {
-    const charactersWithRotations = characterDb.filter(
-        (char) => char.hasRotations
+    const charactersWithRotations = useMemo(
+        () => characterDb.filter((char) => char.hasRotations),
+        []
     );
     const [characters, setCharacters] = useState<Character[]>(
         charactersWithRotations
