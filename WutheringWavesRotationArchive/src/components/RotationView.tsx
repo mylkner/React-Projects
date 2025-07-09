@@ -12,9 +12,9 @@ const RotationView = ({ team, rotation, index }: RotationViewProps) => {
     const characterMap: Map<string, Character> = new Map(
         characterDb.map((char) => [char.name, char])
     );
-    const characterPortraits: Character[] = team
-        .map((charName) => characterMap.get(charName))
-        .filter((char): char is Character => char !== undefined);
+    const characterPortraits: Character[] = team.map(
+        (charName) => characterMap.get(charName)!
+    );
 
     return (
         <div className="flex flex-col gap-3 mb-12">
