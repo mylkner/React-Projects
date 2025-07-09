@@ -1,16 +1,12 @@
 import { useParams } from "react-router";
-import db, { type RotationData } from "../data/rotationData";
+import rotationDb, { type RotationData } from "../data/rotationData";
 import NotFound from "./NotFound";
 import RotationView from "../components/RotationView";
 
 const RotationPage = () => {
     const { character } = useParams();
 
-    if (!character) {
-        return <p>No character specified.</p>;
-    }
-
-    const charData: RotationData | undefined = db.find(
+    const charData: RotationData | undefined = rotationDb.find(
         ({ name }) => name.toLowerCase() === character
     );
 
