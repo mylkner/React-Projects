@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { IoSearch } from "react-icons/io5";
 import { Link } from "react-router";
+import { IoClose } from "react-icons/io5";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
     elementImgPathMaker,
@@ -68,7 +69,36 @@ const CharacterList = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
+            <IoClose
+                className="text-white text-2xl font-semibold hover:cursor-pointer"
+                onClick={() => setSearch("")}
+            />
         </div>
+    );
+
+    const rarityFilter = (
+        <FilterGroup
+            values={Object.values(Rarities)}
+            selected={selectedRarities}
+            setSelected={setSelectedRarities}
+            imgPathMaker={undefined}
+        />
+    );
+    const elementFilter = (
+        <FilterGroup
+            values={Object.values(Elements)}
+            selected={selectedElements}
+            setSelected={setSelectedElements}
+            imgPathMaker={elementImgPathMaker}
+        />
+    );
+    const weaponFilter = (
+        <FilterGroup
+            values={Object.values(Weapons)}
+            selected={selectedWeapons}
+            setSelected={setSelectedWeapons}
+            imgPathMaker={weaponImgPathMaker}
+        />
     );
 
     return (
@@ -77,24 +107,9 @@ const CharacterList = () => {
             <hr className="text-white" />
             <div className="flex flex-col xl:flex-row gap-5">
                 {searchBar}
-                <FilterGroup
-                    values={Object.values(Rarities)}
-                    selected={selectedRarities}
-                    setSelected={setSelectedRarities}
-                    imgPathMaker={undefined}
-                />
-                <FilterGroup
-                    values={Object.values(Elements)}
-                    selected={selectedElements}
-                    setSelected={setSelectedElements}
-                    imgPathMaker={elementImgPathMaker}
-                />
-                <FilterGroup
-                    values={Object.values(Weapons)}
-                    selected={selectedWeapons}
-                    setSelected={setSelectedWeapons}
-                    imgPathMaker={weaponImgPathMaker}
-                />
+                {rarityFilter}
+                {elementFilter}
+                {weaponFilter}
             </div>
 
             <div className="flex flex-wrap gap-3">
