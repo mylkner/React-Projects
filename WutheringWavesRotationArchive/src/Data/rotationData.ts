@@ -61,19 +61,23 @@ const rotationDb: RotationData[] = [
         data: [
             {
                 team: ["Carlotta", "Zhezhi", "Shorekeeper"],
-                rotation: "awdawd",
+                rotation:
+                    "Carlotta HA-E-E, Shorekeeper BA4-HA-E/Intro, Zhezhi BA3, Carlotta Q, Shorekeeper BA4-HA-E-Q-R, Intro Zhezhi R-E-BA-E3-Q, Intro Carlotta HA-E-E-MA-Forte-R6-Repeat.",
             },
             {
                 team: ["Carlotta", "Zhezhi", "Verina"],
-                rotation: "awdawd",
+                rotation:
+                    "Carlotta HA-E-E, Zhezhi BA3/Intro, Verina BA3-E-Q-R, Carlotta Q, Verina Forte, Intro Zhezhi R-E-BA-E3-Q, Intro Carlotta HA-E-E-MA-Forte-R6-Repeat.",
             },
             {
                 team: ["Carlotta", "Changli", "Shorekeeper"],
-                rotation: "awdawd",
+                rotation:
+                    "Carlotta HA-E-E, Changli R-Forte, *Shorekeeper BA4-HA-E/Intro, Changli E, Carlotta Q, Changli TS:Conquest, Shorekeeper BA4-HA-E-Q-R, Intro Changli TS:Charge-E-TS:Conquest, Carlotta HA-E-E-MA-Forte, Changli Q, Carlotta R6-HA-E-E, Intro Changli TS:Charge-MA-Forte-R-Forte. *Repeat from here.",
             },
             {
                 team: ["Carlotta", "Changli", "Verina"],
-                rotation: "awdawd",
+                rotation:
+                    "Carlotta HA-E-E, Changli R-Forte, Verina BA3-E-Q-R, Changli E, Carlotta Q, Changli TS:Charge-Q, Verina Forte, Intro Changli TS:Charge-E-TS:Conquest, Carlotta HA-E-E-MA-Forte-R6, Intro Changli TS:Charge-MA-Forte, Repeat.",
             },
         ],
     },
@@ -81,7 +85,7 @@ const rotationDb: RotationData[] = [
         name: "Changli",
         data: [
             {
-                team: [""],
+                team: ["Changli"],
                 rotation: "",
             },
         ],
@@ -90,7 +94,7 @@ const rotationDb: RotationData[] = [
         name: "Lupa",
         data: [
             {
-                team: [""],
+                team: ["Lupa"],
                 rotation: "",
             },
         ],
