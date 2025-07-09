@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import db, { type RotationData } from "../Data/rotationData";
+import db, { type RotationData } from "../data/rotationData";
 import NotFound from "./NotFound";
 import RotationView from "../components/RotationView";
 

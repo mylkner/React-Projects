@@ -1,14 +1,14 @@
 import { useEffect, useState, useMemo } from "react";
 import { IoSearch } from "react-icons/io5";
-import CharacterPortrait from "../components/CharacterPortrait";
-import characterDb from "../Data/characterData";
+import { Link } from "react-router";
 import { Rarities, Elements, Weapons } from "../types/characterDataTypes";
 import {
     elementImgPathMaker,
     weaponImgPathMaker,
-} from "../Helpers/imgPathMakers";
+} from "../helpers/imgPathMakers";
+import CharacterPortrait from "../components/CharacterPortrait";
+import characterDb from "../data/characterData";
 import FilterGroup from "../components/FilterGroup";
-import { Link } from "react-router";
 import type Character from "../models/CharacterClass";
 
 const CharacterList = () => {

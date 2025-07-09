@@ -1,10 +1,10 @@
-import rotationDb from "../Data/rotationData";
 import {
     resonatorImgPathMaker,
     elementImgPathMaker,
     weaponImgPathMaker,
-} from "../Helpers/imgPathMakers";
+} from "../helpers/imgPathMakers";
 import type { Elements, Rarities, Weapons } from "../types/characterDataTypes";
+import rotationDb from "../data/rotationData";
 
 class Character {
     name: string;

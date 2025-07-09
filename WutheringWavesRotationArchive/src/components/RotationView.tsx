@@ -1,4 +1,4 @@
-import characterDb from "../Data/characterData";
+import characterDb from "../data/characterData";
 import Character from "../models/CharacterClass";
 import CharacterPortrait from "./CharacterPortrait";
 

@@ -1,8 +1,8 @@
 import { Elements, Weapons } from "../types/characterDataTypes";
 
 export const resonatorImgPathMaker = (name: string): string =>
-    `src/Assets/Resonators/Resonator_${name}.webp`;
+    `src/assets/Resonators/Resonator_${name}.webp`;
 export const elementImgPathMaker = (name: Elements): string =>
-    `src/Assets/Elements/${name}.webp`;
+    `src/assets/Elements/${name}.webp`;
 export const weaponImgPathMaker = (name: Weapons): string =>
-    `src/Assets/Weapons/${name}_Icon.webp`;
+    `src/assets/Weapons/${name}_Icon.webp`;

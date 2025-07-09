@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { NavLink } from "react-router";
 import { CiCircleInfo } from "react-icons/ci";
 import InfoCard from "./InfoCard";
-import { NavLink } from "react-router";
 
 const Header = () => {
     const [showInfoCard, setShowInfoCard] = useState<boolean>(false);
